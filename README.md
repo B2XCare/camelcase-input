@@ -30,7 +30,7 @@ Install with the node package manager [npm](http://npmjs.org):
 ### Convert `string` Input
 
 ```javascript
-const camelcase = require('./index.js').camelcase
+const camelcase = require('camelcase-input').camelcase
 console.log(camelcase('Foo-Bar'))
 
 /* OUTPUT */
@@ -40,7 +40,7 @@ fooBar
 ### Convert `object` Input
 
 ```javascript
-const camelcase = require('./index.js').camelcase
+const camelcase = require('camelcase-input').camelcase
 console.log(camelcase({'foo-bar': true}))
 
 /* OUTPUT */
@@ -50,7 +50,7 @@ console.log(camelcase({'foo-bar': true}))
 ### Convert `array of objects` Input
 
 ```javascript
-const camelcase = require('./index.js').camelcase
+const camelcase = require('camelcase-input').camelcase
 console.log(camelcase([{'foo-bar': true}, {'is_that_you': true}]))
 
 /* OUTPUT */
@@ -60,7 +60,7 @@ console.log(camelcase([{'foo-bar': true}, {'is_that_you': true}]))
 ### Convert `array of string` Input
 
 ```javascript
-const camelcase = require('./index.js').camelcase
+const camelcase = require('camelcase-input').camelcase
 console.log(camelcase(['Foo-Bar', 'are-you-there']))
 
 /* OUTPUT */
