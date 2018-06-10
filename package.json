@@ -1,0 +1,28 @@
+{
+  "name": "camelcase-input",
+  "version": "0.0.1",
+  "description": "Convert input (string, array, object) to lowerCamelcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit --recursive --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chetan07j/camelcase-input.git"
+  },
+  "keywords": [
+    "camel",
+    "case",
+    "lowerCamelcase",
+    "convert",
+    "object",
+    "string",
+    "array"
+  ],
+  "author": "chetan0779@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chetan07j/camelcase-input/issues"
+  },
+  "homepage": "https://github.com/Chetan07j/camelcase-input#readme"
+}
