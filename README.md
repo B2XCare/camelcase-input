@@ -64,7 +64,17 @@ const camelcase = require('camelcase-input').camelcase
 console.log(camelcase(['Foo-Bar', 'are-you-there']))
 
 /* OUTPUT */
-'fooBar', 'areYouThere'
+fooBar, areYouThere
+```
+
+### Convert `array of objects` Input `({ deep: true })`
+
+```javascript
+const camelcase = require('camelcase-input').camelcase
+console.log(camelcase([{'FOo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}]}, {'bar-foo': { 'Test-te': {'opt-tdt': 'dfdfdf'} }}], { deep: true })))
+
+/* OUTPUT */
+[{ fooBar: [{ abcDfR: true }, { tghdDfdfEe: true }] },{ barFoo: { testTe: { optTdt: dfdfdf } } }]
 ```
 
 ## Changelog
