@@ -18,11 +18,11 @@ Install with the node package manager [npm](http://npmjs.org):
 
 - Using npm
   ```shell
-  $ npm install @b2xcare/camelcase-input --save
+  $ npm install b2x-camelcase-input --save
   ```
 - Using yarn
   ```shell
-  $ yarn add @b2xcare/camelcase-input
+  $ yarn add b2x-camelcase-input
   ```
 
 ## How To Use?
@@ -30,7 +30,7 @@ Install with the node package manager [npm](http://npmjs.org):
 ### Convert `string` Input
 
 ```javascript
-const camelcase = require('@b2xcare/camelcase-input').camelcase
+const camelcase = require('b2x-camelcase-input').camelcase
 console.log(camelcase('Foo-Bar'))
 
 /* OUTPUT */
@@ -40,7 +40,7 @@ fooBar
 ### Convert `object` Input
 
 ```javascript
-const camelcase = require('@b2xcare/camelcase-input').camelcase
+const camelcase = require('b2x-camelcase-input').camelcase
 console.log(camelcase({'foo-bar': true}))
 
 /* OUTPUT */
@@ -50,7 +50,7 @@ console.log(camelcase({'foo-bar': true}))
 ### Convert `array of objects` Input
 
 ```javascript
-const camelcase = require('@b2xcare/camelcase-input').camelcase
+const camelcase = require('b2x-camelcase-input').camelcase
 console.log(camelcase([{'foo-bar': true}, {'is_that_you': true}]))
 
 /* OUTPUT */
@@ -60,7 +60,7 @@ console.log(camelcase([{'foo-bar': true}, {'is_that_you': true}]))
 ### Convert `array of string` Input
 
 ```javascript
-const camelcase = require('@b2xcare/camelcase-input').camelcase
+const camelcase = require('b2x-camelcase-input').camelcase
 console.log(camelcase(['Foo-Bar', 'are-you-there']))
 
 /* OUTPUT */
@@ -70,7 +70,7 @@ fooBar, areYouThere
 ### Convert `array of objects` Input `({ deep: true })`
 
 ```javascript
-const camelcase = require('@b2xcare/camelcase-input').camelcase
+const camelcase = require('b2x-camelcase-input').camelcase
 console.log(camelcase([{'FOo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}]}, {'bar-foo': { 'Test-te': {'opt-tdt': 'dfdfdf'} }}], { deep: true })))
 
 /* OUTPUT */
