@@ -8,7 +8,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/B2XCare/camelcase-input.svg)](https://github.com/B2XCare/camelcase-input/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/B2XCare/camelcase-input.svg)](https://github.com/B2XCare/camelcase-input/issues?q=is%3Aissue+is%3Aclosed)
 
-[![NPM](https://nodei.co/npm/camelcase-input.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/camelcase-input/)
+[![NPM](https://nodei.co/npm/b2x-camelcase-input.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/b2x-camelcase-input/)
 
 > Convert your input into lowerCamelcase format, this Node.js module allows you to convert string, array. object into lowerCamelcase.
 
