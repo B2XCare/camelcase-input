@@ -1,6 +1,6 @@
 {
-  "name": "@b2xcare/camelcase-input",
-  "version": "0.0.1",
+  "name": "b2x-camelcase-input",
+  "version": "1.0.0",
   "description": "Convert input (string, array, object) to lowerCamelcase",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "array",
     "b2x"
   ],
-  "author": "chetan0779@outlook.com",
+  "author": "b2x.system@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/B2XCare/camelcase-input/issues"
