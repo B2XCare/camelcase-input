@@ -1,6 +1,6 @@
 {
-  "name": "camelcase-input",
-  "version": "0.0.3",
+  "name": "@b2xcare/b2x-camelcase-input",
+  "version": "0.0.1",
   "description": "Convert input (string, array, object) to lowerCamelcase",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chetan07j/camelcase-input.git"
+    "url": "git+https://github.com/B2XCare/camelcase-input.git"
   },
   "keywords": [
     "camel",
@@ -17,14 +17,15 @@
     "convert",
     "object",
     "string",
-    "array"
+    "array",
+    "b2x"
   ],
   "author": "chetan0779@outlook.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Chetan07j/camelcase-input/issues"
+    "url": "https://github.com/B2XCare/camelcase-input/issues"
   },
-  "homepage": "https://github.com/Chetan07j/camelcase-input#readme",
+  "homepage": "https://github.com/B2XCare/camelcase-input#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "expect": "^23.1.0",
@@ -34,5 +35,9 @@
     "env": [
       "mocha"
     ]
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
