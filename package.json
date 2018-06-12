@@ -1,6 +1,6 @@
 {
-  "name": "b2x-camelcase-input",
-  "version": "1.0.2",
+  "name": "camelcase-input",
+  "version": "1.0.0",
   "description": "Convert input (string, array, object) to lowerCamelcase",
   "main": "index.js",
   "scripts": {
