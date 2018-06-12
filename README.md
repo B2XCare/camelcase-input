@@ -79,4 +79,4 @@ console.log(camelcase([{'FOo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}
 
 ## Changelog
 
-- _0.0.1 Initial version_
+- _1.0.0 Initial version_
