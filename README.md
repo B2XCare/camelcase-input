@@ -71,7 +71,7 @@ fooBar, areYouThere
 
 ```javascript
 const camelcase = require('camelcase-input').camelcase
-console.log(camelcase([{'FOo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}]}, {'bar-foo': { 'Test-te': {'opt-tdt': 'dfdfdf'} }}], { deep: true })))
+console.log(camelcase([{'Foo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}]}, {'bar-foo': { 'Test-te': {'opt-tdt': 'dfdfdf'} }}], { deep: true })))
 
 /* OUTPUT */
 [{ fooBar: [{ abcDfR: true }, { tghdDfdfEe: true }] },{ barFoo: { testTe: { optTdt: dfdfdf } } }]
@@ -79,4 +79,5 @@ console.log(camelcase([{'FOo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}
 
 ## Changelog
 
+- _1.0.1 value assign issue fixed_
 - _1.0.0 Initial version_
