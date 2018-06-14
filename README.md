@@ -12,6 +12,10 @@
 
 > Convert your input into lowerCamelcase format, this Node.js module allows you to convert string, array. object into lowerCamelcase.
 
+### >=1.0.0 Version of this package requires >=6.0 version of [Node.js](https://nodejs.org/en/download/)
+
+_To Use This Package For Earlier Versions (<6.0) Of Your Node.js Then Download <1.0.0 Version_
+
 ## Installation
 
 Install with the node package manager [npm](http://npmjs.org):
