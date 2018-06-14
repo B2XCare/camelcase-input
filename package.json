@@ -1,6 +1,6 @@
 {
   "name": "camelcase-input",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Convert input (string, array, object) to lowerCamelcase",
   "main": "index.js",
   "scripts": {
