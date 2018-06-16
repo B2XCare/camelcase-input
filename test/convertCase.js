@@ -59,4 +59,22 @@ describe('CONVERT INPUT TO lowerCamelcase:', () => {
     expect(output).to.have.property('isDeleted')
     done()
   })
+
+  it('Should remove digit from "start of string" if (removeDigitFromStart = true) and convert string to lowerCamelcase', (done) => {
+    let output = camelcase('1. Information12', { deep: true, removeDigitFromStart: true })
+    expect(output).to.equal('information12')
+    done()
+  })
+
+  it('Should remove "()" from string "if it contains atleast 1 character" and convert string to lowerCamelcase', (done) => {
+    let output = camelcase('Information (1 min)', { deep: true })
+    expect(output).to.equal('information1Min')
+    done()
+  })
+
+  it('Should return input string as it as if it does not contains any character', (done) => {
+    let output = camelcase('2018-06-15 06:00:00', { deep: true })
+    expect(output).to.equal('2018-06-15 06:00:00')
+    done()
+  })
 })
