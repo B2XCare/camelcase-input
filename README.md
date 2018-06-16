@@ -81,7 +81,42 @@ console.log(camelcase([{'Foo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}
 [{ fooBar: [{ abcDfR: true }, { tghdDfdfEe: true }] },{ barFoo: { testTe: { optTdt: dfdfdf } } }]
 ```
 
+### Convert `string` Input And Remove Digit From Start Of String `({ removeDigitFromStart: true })`
+
+```javascript
+/* SAME APPLIES TO Objects, Array, etc. */
+const camelcase = require('camelcase-input').camelcase
+console.log(camelcase('1. Information12', { deep: true })))
+
+/* OUTPUT */
+information12
+```
+
+### Convert `string` Input And Remove `()` String If It Contains Atleast One Character
+
+```javascript
+/* SAME APPLIES TO Objects, Array, etc. */
+const camelcase = require('camelcase-input').camelcase
+console.log(camelcase('Information (1 min)', { deep: true })))
+
+/* OUTPUT */
+information1Min
+```
+
+### Returns `string` Input As It Is If It Does Not Contain Any Character
+
+```javascript
+/* SAME APPLIES TO Objects, Array, etc. */
+const camelcase = require('camelcase-input').camelcase
+console.log(camelcase('2018-06-15 06:00:00', { deep: true })))
+
+/* OUTPUT */
+2018-06-15 06:00:00
+```
+
 ## Changelog
 
+- _1.0.3 remove digit from start of string, remove () from input added_
+- _1.0.2 nested object conversion issue resolve_
 - _1.0.1 value assign issue fixed_
 - _1.0.0 Initial version_
