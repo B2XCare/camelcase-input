@@ -30,7 +30,7 @@ Install with the node package manager [npm](http://npmjs.org):
 ### Convert `string` Input
 
 ```javascript
-const camelcase = require('camelcase-input').camelcase
+var camelcase = require('camelcase-input').camelcase
 console.log(camelcase('Foo-Bar'))
 
 /* OUTPUT */
@@ -40,7 +40,7 @@ fooBar
 ### Convert `object` Input
 
 ```javascript
-const camelcase = require('camelcase-input').camelcase
+var camelcase = require('camelcase-input').camelcase
 console.log(camelcase({'foo-bar': true}))
 
 /* OUTPUT */
@@ -50,7 +50,7 @@ console.log(camelcase({'foo-bar': true}))
 ### Convert `array of objects` Input
 
 ```javascript
-const camelcase = require('camelcase-input').camelcase
+var camelcase = require('camelcase-input').camelcase
 console.log(camelcase([{'foo-bar': true}, {'is_that_you': true}]))
 
 /* OUTPUT */
@@ -60,7 +60,7 @@ console.log(camelcase([{'foo-bar': true}, {'is_that_you': true}]))
 ### Convert `array of string` Input
 
 ```javascript
-const camelcase = require('camelcase-input').camelcase
+var camelcase = require('camelcase-input').camelcase
 console.log(camelcase(['Foo-Bar', 'are-you-there']))
 
 /* OUTPUT */
@@ -70,14 +70,47 @@ fooBar, areYouThere
 ### Convert `array of objects` Input `({ deep: true })`
 
 ```javascript
-const camelcase = require('camelcase-input').camelcase
+var camelcase = require('camelcase-input').camelcase
 console.log(camelcase([{'Foo-bar': [{'abc-df__r': true}, {'tghd_dfdf--ee': true}]}, {'bar-foo': { 'Test-te': {'opt-tdt': 'dfdfdf'} }}], { deep: true })))
 
 /* OUTPUT */
 [{ fooBar: [{ abcDfR: true }, { tghdDfdfEe: true }] },{ barFoo: { testTe: { optTdt: dfdfdf } } }]
 ```
 
+### Convert `string` Input And Remove Digit From Start Of String `({ removeDigitFromStart: true })`
+
+```javascript
+/* SAME APPLIES TO Objects, Array, etc. */
+var camelcase = require('camelcase-input').camelcase
+console.log(camelcase('1. Information12', { deep: true })))
+
+/* OUTPUT */
+information12
+```
+
+### Convert `string` Input And Remove `()` From String If It Contains Atleast One Character
+
+```javascript
+/* SAME APPLIES TO Objects, Array, etc. */
+var camelcase = require('camelcase-input').camelcase
+console.log(camelcase('Information (1 min)', { deep: true })))
+
+/* OUTPUT */
+information1Min
+```
+
+### Returns `string` Input As It Is If It Does Not Contain Any Character
+
+```javascript
+/* SAME APPLIES TO Objects, Array, etc. */
+var camelcase = require('camelcase-input').camelcase
+console.log(camelcase('2018-06-15 06:00:00', { deep: true })))
+
+/* OUTPUT */
+2018-06-15 06:00:00
+```
+
 ## Changelog
 
-- _1.0.1 value assign issue fixed_
-- _1.0.0 Initial version_
+- _0.0.8 remove digit from start of string, remove () from input added_
+- _0.0.1 Initial version_
