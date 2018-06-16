@@ -92,7 +92,7 @@ console.log(camelcase('1. Information12', { deep: true })))
 information12
 ```
 
-### Convert `string` Input And Remove `()` String If It Contains Atleast One Character
+### Convert `string` Input And Remove `()` From String If It Contains Atleast One Character
 
 ```javascript
 /* SAME APPLIES TO Objects, Array, etc. */
